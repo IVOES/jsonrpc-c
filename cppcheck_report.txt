@@ -1,0 +1,26 @@
+src/cJSON.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+src/jsonrpc-c.c:104:18: style: The scope of the variable 'params' can be reduced. [variableScope]
+ cJSON *method, *params, *id;
+                 ^
+src/jsonrpc-c.c:104:27: style: The scope of the variable 'id' can be reduced. [variableScope]
+ cJSON *method, *params, *id;
+                          ^
+src/jsonrpc-c.c:210:7: style: The scope of the variable 's' can be reduced. [variableScope]
+ char s[INET6_ADDRSTRLEN];
+      ^
+src/jsonrpc-c.c:394:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+src/jsonrpc-c.c:395:6: style: The scope of the variable 'found' can be reduced. [variableScope]
+ int found = 0;
+     ^
+src/jsonrpc-c.c:348:0: information: Skipping configuration 'EVUNLOOP_ALL' since the value of 'EVUNLOOP_ALL' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ EV_BREAK(server->loop, EVBREAK_ALL);
+^
+src/jsonrpc-c.c:392:0: style: The function 'jrpc_deregister_procedure' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
